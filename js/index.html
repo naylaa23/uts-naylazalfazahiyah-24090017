@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      display: flex;
+      gap: 60px;
+    }
+
+    .left-box {
+      flex: 1;
+      border: 1px solid #dcdcdc;
+      border-radius: 18px;
+      height: 420px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fafafa;
+    }
+
+    .left-box img {
+      width: 78%;
+      max-width: 520px;
+      opacity: 0.95;
+    }
+
+    .right-box {
+      flex: 1;
+      padding-top: 20px;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .input-box {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .input-box img {
+      width: 18px;
+      position: absolute;
+      left: 12px;
+      top: 13px;
+      opacity: 0.7;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 12px 12px 40px;
+      border-radius: 10px;
+      border: 1px solid #cfcfcf;
+      font-size: 15px;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 13px;
+      background: #000000;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .or {
+      text-align: center;
+      margin: 15px 0;
+      color: #777;
+    }
+
+    .social-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-btn {
+      flex: 1;
+      border: 1px solid #cfcfcf;
+      padding: 11px;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .social-btn img {
+      width: 18px;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-box {
+        display: none;
+      }
+
+      .right-box {
+        width: 100%;
+        max-width: 420px;
+      }
+    }
+  </style>
+</head>
+<body data-page="login">
+
+  <main class="container">
+
+    <section class="left-box">
+      <img src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000619072098d942b3ec3cbe967&ts=490202&p=fs&cid=1&sig=ce63ad90e7074a00fa22e477cb919774616e610f8932c5ca7b5d610e153c5ce6&v=0" alt="Warkop illustration" />
+    </section>
+
+    <section class="right-box">
+      <h1 class="title">Welcome Back!</h1>
+
+      <form id="loginForm">
+        <div class="input-box">
+          <img src="https://www.svgrepo.com/show/119534/email.svg" alt="email icon" />
+          <input type="text" id="email" name="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.D8nemBhgTZk6KzU-ZSvuJAHaI6?pid=Api&P=0&h=180" alt="password icon" />
+          <input type="password" id="password" name="password" placeholder="Password" />
+        </div>
+
+        <div class="forgot">Forgot Password?</div>
+
+        <button class="btn-login" type="submit">Login</button>
+
+        <div class="or">Or</div>
+
+        <div class="social-row">
+          <button class="social-btn" type="button">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.EhTMbGiYfYzQnWLgjZaoJAHaHa?pid=Api&P=0&h=180" alt="google" />
+            Google
+          </button>
+          <button class="social-btn" type="button">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/964/386/original/facebook-circle-icon-for-web-design-free-png.png" alt="facebook" />
+            Facebook
+          </button>
+        </div>
+
+        <div class="signup">
+          Don’t have an account? <a href="#">Sign Up</a>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

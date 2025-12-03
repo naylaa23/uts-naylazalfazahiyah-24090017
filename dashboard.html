@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo"></div>
+
+      <nav class="nav-menu">
+        <div class="nav-item active">
+          <span class="icon icon-home"></span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='products.html'">
+          <span class="icon icon-grid">
+            <span class="square1"></span>
+            <span class="square2"></span>
+          </span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-money"></span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-chart"></span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-gear"></span>
+        </div>
+      </nav>
+    </aside>
+
+    
+    <main class="content">
+      <h1 class="page-title">Dashboard</h1>
+
+      <section class="card">
+        <div class="summary-row">
+
+          <div class="summary-box">
+            <div class="summary-icon bag"></div>
+            <div>
+              <p class="summary-label">Total Products</p>
+              <p class="summary-value" id="sum-products">0</p>
+            </div>
+          </div>
+
+          <div class="summary-box">
+            <div class="summary-icon bag"></div>
+            <div>
+              <p class="summary-label">Total Sales</p>
+              <p class="summary-value" id="sum-sales">0</p>
+            </div>
+          </div>
+
+          <div class="summary-box">
+            <div class="summary-icon coin"></div>
+            <div>
+              <p class="summary-label">Total Revenue</p>
+              <p class="summary-value" id="sum-revenue">Rp 0</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="blank-box"></div>
+
+        <button class="btn-products" onclick="window.location.href='product.html'">
+  Lihat Data Produk
+        </button>
+
+
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

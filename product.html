@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+
+  <div class="layout">
+
+    
+    <aside class="sidebar">
+      <div class="logo"></div>
+
+      <nav class="nav-menu">
+        <div class="nav-item" onclick="window.location.href='dashboard.html'">
+          <span class="icon icon-home"></span>
+        </div>
+        <div class="nav-item active">
+          <span class="icon icon-grid">
+            <span class="square1"></span>
+            <span class="square2"></span>
+          </span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-money"></span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-chart"></span>
+        </div>
+        <div class="nav-item">
+          <span class="icon icon-gear"></span>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">List Data Product</h1>
+
+      <section class="card">
+        <table class="table" id="product-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
